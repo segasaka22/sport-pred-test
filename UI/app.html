@@ -1,0 +1,70 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./app.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css" type="text/css" />
+    <!--meaningful title-->
+    <title>Sports Player Classifier Using SVM</title>
+
+</head>
+<body>
+
+<div class="dropcontainer">
+    <form action="/file-upload" class="dropzone" id="dropzone">
+
+    </form>
+</div>
+<button id="submitBtn" type="button" class="btn btn-success">Classify</button>
+
+<div class="test">
+    <h1></h1>
+</div>
+
+<div id="error" >
+    <p>Can't classify image. Classifier was not able to detect face and two eyes properly</p>
+</div>
+
+<div id="resultHolder">
+</div>
+
+<div id="divClassTable">
+                <table id="classTable">
+                        <tr>
+                            <th>Player</th>
+                            <th>Probability Score</th>
+                        </tr>
+                        <tr>
+                            <td>Leonel Messi</td>
+                            <td id="score_lionel_messi"></td>
+                        </tr>
+                        <tr>
+                            <td>Maria Sharapova</td>
+                            <td id="score_maria_sharapova"></td>
+                        </tr>
+                        <tr>
+                            <td>Rodger Federer</td>
+                            <td id="score_roger_federer"></td>
+                        </tr>
+                        <tr>
+                            <td>Serena Williams</td>
+                            <td id="score_serena_williams"></td>
+                        </tr>
+                        <tr>
+                            <td>Virat Kohli</td>
+                            <td id="score_virat_kohli"></td>
+                        </tr>
+                </table>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://unpkg.com/dropzone@5/dist/min/dropzone.min.js"></script>
+<script src="./app.js"></script>
+</body>
+
+
+
+</html>
